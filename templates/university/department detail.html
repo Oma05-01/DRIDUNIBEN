@@ -1,0 +1,26 @@
+{% extends 'university/base.html' %}
+
+{% block title %}{{ department.title }} - University Directory{% endblock %}
+
+{% block content %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'university:faculty_list' %}">Faculties</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'university:faculty_detail' department.faculty.code %}">{{ department.faculty.code }}</a></li>
+        <li class="breadcrumb-item active">{{ department.code }}</li>
+    </ol>
+</nav>
+
+<div class="card">
+    <div class="card-header bg-primary text-white">
+        <h1 class="h3 mb-0">{{ department.title }} ({{ department.code }})</h1>
+    </div>
+    <div class="card-body">
+        <h2 class="h5">Faculty:
+            <a href="{% url 'university:faculty_detail' department.faculty.code %}">
+                {{ department.faculty.title }} ({{ department.faculty.code }})
+            </a>
+        </h2>
+    </div>
+</div>
+{% endblock %}
