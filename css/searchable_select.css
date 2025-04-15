@@ -1,0 +1,19 @@
+.searchable-select-wrapper {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.searchable-select-wrapper input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.searchable-select {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    overflow-y: auto;
+}

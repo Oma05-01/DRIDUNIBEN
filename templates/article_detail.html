@@ -1,0 +1,37 @@
+{% extends 'article_base.html' %}
+{% load static %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header bg-secondary text-white">
+            <h3>{{ article.title }}</h3>
+            <p class="mb-0"><strong>Category:</strong> {{ article.category }}</p>
+            <p><strong>Published:</strong> {{ article.publish_date|date:"M d, Y H:i" }}</p>
+        </div>
+        <div class="card-body">
+            <img src="{{ article.cover_photo.url }}" class="img-fluid mb-3" alt="Cover Photo">
+            <p>{{ article.content }}</p>
+
+            <p><strong>Contributors:</strong>
+<!--                {% for contributor in contributors %}-->
+<!--                    {{ contributor.name }} ({{ contributor.email }}){% if not forloop.last %}, {% endif %}-->
+<!--                {% empty %}-->
+<!--                    <em>No contributors listed.</em>-->
+<!--                {% endfor %}-->
+                {{contributors}}
+            </p>
+        </div>
+    </div>
+
+    <div class="mt-3">
+        <a href="{% url 'admin_dashboard' %}" class="btn btn-secondary">← Back to Dashboard</a>
+    </div>
+</div>
+{% endblock %}
+
+
+67fe81fc1b66775a3684dda6
+67fe81fc1b66775a3684dda6
