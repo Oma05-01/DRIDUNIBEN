@@ -79,6 +79,14 @@ class Article(models.Model):
     content = models.TextField(max_length=500)
     cover_photo = models.ImageField(upload_to='articles/covers/')
     contributors = models.ManyToManyField(Contributor, related_name='articles')
+    researcher = models.ForeignKey(
+        Contributor,
+        on_delete=models.SET_NULL,
+        related_name='researched_articles',
+        null=True,
+        blank=True,
+        default=""
+    )
     department = models.ForeignKey(Department, on_delete=models.CASCADE)
     owner = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
     publish_date = models.DateTimeField(auto_now_add=True)

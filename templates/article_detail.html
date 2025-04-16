@@ -17,7 +17,7 @@
 
             <p><strong>Contributors:</strong>
                 {% for contributor in article.contributors.all %}
-                    {{ contributor.name }}{% if not forloop.last %}, {% endif %}
+                    <a href="{% url 'view_contributor' contributor.get_id %}">{{ contributor.name }}</a>{% if not forloop.last %}, {% endif %}
                 {% empty %}
                     <em>No contributors listed.</em>
                 {% endfor %}

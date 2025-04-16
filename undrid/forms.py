@@ -26,6 +26,19 @@ class MongoDBMultipleChoiceField(forms.ModelMultipleChoiceField):
         return super().clean(value)
 
 
+class MongoDBChoiceField(forms.ModelChoiceField):
+    def clean(self, value):
+        if value:
+            try:
+                obj_id = ObjectId(value)
+                self.queryset.get(_id=obj_id)
+                return super().clean(obj_id)
+            except Exception as e:
+                print(f"Invalid contributor ID: {value} — {e}")
+                raise forms.ValidationError("Invalid contributor selected.")
+        return super().clean(value)
+
+
 class ArticleAdminForm(forms.ModelForm):
     contributors = MongoDBMultipleChoiceField(
         queryset=Contributor.objects.all(),
@@ -44,9 +57,15 @@ class ArticleForm(forms.ModelForm):
         required=False
     )
 
+    researcher = MongoDBChoiceField(
+        queryset=Contributor.objects.all(),
+        required=True,
+        widget=forms.Select(attrs={'class': 'form-control'})
+    )
+
     class Meta:
         model = Article
-        fields = ['title', 'category', 'content', 'cover_photo', 'contributors', 'department']
+        fields = ['title', 'category', 'content', 'cover_photo', 'researcher', 'contributors', 'department']
         widgets = {
             'content': forms.Textarea(attrs={'rows': 5, 'class': 'form-control'}),
             'title': forms.TextInput(attrs={'class': 'form-control'}),

@@ -198,4 +198,23 @@ def contributor_list(request):
 
 def view_contributor(request, pk):
     contributor = get_object_or_404(Contributor, _id=ObjectId(pk))
-    return render(request, 'view_contributor.html', {'contributor': contributor})
+
+    # Count where they are the lead researcher
+    lead_count = Article.objects.filter(researcher=contributor).count()
+
+    # Count where they are a contributor (but not lead)
+    contribution_count = Article.objects.filter(contributors=contributor).exclude(researcher=contributor).count()
+
+    return render(request, 'view_contributor.html', {'contributor': contributor, 'lead_count': lead_count,
+        'contribution_count': contribution_count,})
+
+
+def articles_by_researcher(request, pk):
+    contributor = get_object_or_404(Contributor, _id=ObjectId(pk))
+
+    articles = Article.objects.filter(researcher=contributor)
+
+    return render(request, 'articles_by_researcher.html', {
+        'contributor': contributor,
+        'articles': articles
+    })

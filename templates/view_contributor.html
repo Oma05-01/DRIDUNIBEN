@@ -87,17 +87,24 @@
 
             <div class="stats-grid">
                 <div class="stat-card">
-                    <h4>25</h4>
+                    <h4>{{ lead_count }}</h4>
                     <p class="text-muted mb-0">Articles</p>
                 </div>
                 <div class="stat-card">
-                    <h4>142</h4>
+                    <h4>{{ contribution_count }}</h4>
                     <p class="text-muted mb-0">Contributions</p>
                 </div>
                 <div class="stat-card">
                     <h4>2018</h4>
                     <p class="text-muted mb-0">Member Since</p>
                 </div>
+            </div>
+
+            <br>
+            <div class="text-center mt-4">
+                <a href="{% url 'articles_by_researcher' contributor.pk %}" class="btn btn-primary">
+                    <i class="fas fa-book"></i> View Articles
+                </a>
             </div>
         </div>
     </div>

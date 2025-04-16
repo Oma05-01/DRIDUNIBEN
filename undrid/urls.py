@@ -21,6 +21,7 @@ urlpatterns = [
     path('contributors/add/', views.add_contributor, name='add_contributor'),
     path('contributors/', views.contributor_list, name='contributor_list'),
     path('contributors/<str:pk>/', views.view_contributor, name='view_contributor'),
+    path('contributor/<str:pk>/articles/', views.articles_by_researcher, name='articles_by_researcher'),
 
     path('articles/<str:pk>/edit/', views.edit_article, name='edit_article'),
     path('articles/<str:pk>/delete/', views.delete_article, name='delete_article'),

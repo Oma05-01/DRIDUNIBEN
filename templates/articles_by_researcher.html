@@ -1,0 +1,26 @@
+{% extends 'article_base.html' %}
+{% block title %}Articles by {{ contributor.name }}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2>Articles by {{ contributor.name }}</h2>
+
+    {% if articles %}
+        <ul class="list-group mt-3">
+            {% for article in articles %}
+                <li class="list-group-item">
+                    <h5>{{ article.title }}</h5>
+                    <p>{{ article.content|truncatewords:30 }}</p>
+                    <a href="{% url 'article_detail' article.pk %}" class="btn btn-sm btn-outline-primary">
+                        View Article
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <div class="alert alert-info mt-4">
+            No articles found where {{ contributor.name }} is listed as the researcher.
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

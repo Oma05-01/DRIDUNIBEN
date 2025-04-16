@@ -3508,3 +3508,242 @@ INFO 2025-04-16 14:31:28,656 basehttp "GET /article/67ff9f44d0c6724f2d724958/ HT
 INFO 2025-04-16 14:31:38,662 basehttp "GET /article/67ff98c0812dcd442d62af90/ HTTP/1.1" 200 5254
 INFO 2025-04-16 14:31:38,702 basehttp "GET /media/articles/covers/control_p_Nfke4a1.jpeg HTTP/1.1" 304 0
 INFO 2025-04-16 14:31:45,496 basehttp "GET /articles/67ff98c0812dcd442d62af90/edit/ HTTP/1.1" 200 23145
+INFO 2025-04-16 14:33:05,582 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 14:33:36,315 basehttp "GET / HTTP/1.1" 200 6561
+INFO 2025-04-16 14:33:43,420 basehttp "GET /article/67ff9f44d0c6724f2d724958/ HTTP/1.1" 200 5250
+INFO 2025-04-16 14:33:43,475 basehttp "GET /static/js/article_publish.js HTTP/1.1" 304 0
+INFO 2025-04-16 14:33:46,652 basehttp "GET / HTTP/1.1" 200 6561
+INFO 2025-04-16 14:33:48,087 basehttp "GET /articles/ HTTP/1.1" 200 8660
+INFO 2025-04-16 14:34:03,785 basehttp "GET /create-article HTTP/1.1" 200 25859
+INFO 2025-04-16 14:35:01,527 basehttp "GET /contributors/add/ HTTP/1.1" 200 5180
+INFO 2025-04-16 14:35:04,072 basehttp "GET /create-article HTTP/1.1" 200 25859
+INFO 2025-04-16 14:35:21,892 basehttp "GET /contributors/ HTTP/1.1" 200 7276
+INFO 2025-04-16 14:35:24,283 basehttp "GET /contributors/67ff989d812dcd442d62af8d/ HTTP/1.1" 200 6766
+INFO 2025-04-16 14:59:23,589 basehttp "GET /create-article HTTP/1.1" 200 25859
+INFO 2025-04-16 14:59:54,890 basehttp "GET /contributors/ HTTP/1.1" 200 7276
+INFO 2025-04-16 14:59:59,152 basehttp "GET /contributors/67ff989d812dcd442d62af8d/ HTTP/1.1" 200 6766
+INFO 2025-04-16 15:33:23,834 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 15:33:27,737 basehttp "GET / HTTP/1.1" 200 6561
+INFO 2025-04-16 15:34:08,585 basehttp "GET /article/67ff9f44d0c6724f2d724958/ HTTP/1.1" 200 5250
+INFO 2025-04-16 15:34:08,620 basehttp "GET /media/articles/covers/Screenshot_20-2-2025_163817_.jpeg HTTP/1.1" 304 0
+INFO 2025-04-16 15:34:08,629 basehttp "GET /static/js/article_publish.js HTTP/1.1" 304 0
+INFO 2025-04-16 15:34:13,585 basehttp "GET / HTTP/1.1" 200 6561
+INFO 2025-04-16 15:34:15,752 basehttp "GET /article/67ff98c0812dcd442d62af90/ HTTP/1.1" 200 5254
+INFO 2025-04-16 15:34:15,786 basehttp "GET /media/articles/covers/control_p_Nfke4a1.jpeg HTTP/1.1" 304 0
+INFO 2025-04-16 15:34:18,437 basehttp "GET / HTTP/1.1" 200 6561
+INFO 2025-04-16 16:01:04,524 basehttp "GET / HTTP/1.1" 200 6561
+INFO 2025-04-16 16:01:11,758 basehttp "GET /article/67ff9f44d0c6724f2d724958/ HTTP/1.1" 200 5250
+INFO 2025-04-16 16:01:11,804 basehttp "GET /media/articles/covers/Screenshot_20-2-2025_163817_.jpeg HTTP/1.1" 304 0
+INFO 2025-04-16 16:01:11,820 basehttp "GET /static/js/article_publish.js HTTP/1.1" 304 0
+INFO 2025-04-16 16:01:31,992 basehttp "GET /contributors/ HTTP/1.1" 200 7276
+INFO 2025-04-16 16:01:34,333 basehttp "GET /contributors/67ff922431c1b9d92845ef1a/ HTTP/1.1" 200 6745
+INFO 2025-04-16 16:07:30,807 basehttp "GET /articles/ HTTP/1.1" 200 8660
+INFO 2025-04-16 16:07:30,849 basehttp "GET /media/articles/covers/control_p_Nfke4a1.jpeg HTTP/1.1" 304 0
+INFO 2025-04-16 16:07:33,926 basehttp "GET /article/67ff9f44d0c6724f2d724958/ HTTP/1.1" 200 5304
+INFO 2025-04-16 16:07:37,024 basehttp "GET /contributors/67ff922431c1b9d92845ef1a/ HTTP/1.1" 200 6745
+INFO 2025-04-16 16:20:07,000 autoreload C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\undrid\models.py changed, reloading.
+INFO 2025-04-16 16:20:09,660 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 16:28:25,084 autoreload C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\undrid\views.py changed, reloading.
+INFO 2025-04-16 16:28:28,379 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 16:28:45,164 autoreload C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\undrid\views.py changed, reloading.
+INFO 2025-04-16 16:28:47,287 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 16:32:20,323 autoreload C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\undrid\forms.py changed, reloading.
+INFO 2025-04-16 16:32:22,649 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 16:34:01,611 autoreload C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\undrid\forms.py changed, reloading.
+INFO 2025-04-16 16:34:04,103 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 16:35:06,948 autoreload C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\undrid\forms.py changed, reloading.
+INFO 2025-04-16 16:35:09,040 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 16:36:46,587 basehttp "GET /create-article HTTP/1.1" 200 26735
+INFO 2025-04-16 16:38:04,858 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 16:38:07,833 basehttp "GET /create-article HTTP/1.1" 200 26735
+ERROR 2025-04-16 16:38:37,697 log Internal Server Error: /create-article
+Traceback (most recent call last):
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\undrid\views.py", line 63, in create_article
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\forms\forms.py", line 177, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\forms\forms.py", line 172, in errors
+    self.full_clean()
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\forms\forms.py", line 374, in full_clean
+    self._clean_fields()
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\forms\forms.py", line 392, in _clean_fields
+    value = field.clean(value)
+            ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\forms\fields.py", line 149, in clean
+    value = self.to_python(value)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\forms\models.py", line 1274, in to_python
+    value = self.queryset.get(**{key: value})
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\db\models\query.py", line 433, in get
+    raise self.model.MultipleObjectsReturned(
+undrid.models.Department.MultipleObjectsReturned: get() returned more than one Department -- it returned 2!
+ERROR 2025-04-16 16:38:37,703 basehttp "POST /create-article HTTP/1.1" 500 99007
+ERROR 2025-04-16 16:39:08,333 log Internal Server Error: /create-article
+Traceback (most recent call last):
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\undrid\views.py", line 63, in create_article
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\forms\forms.py", line 177, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\forms\forms.py", line 172, in errors
+    self.full_clean()
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\forms\forms.py", line 374, in full_clean
+    self._clean_fields()
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\forms\forms.py", line 392, in _clean_fields
+    value = field.clean(value)
+            ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\forms\fields.py", line 149, in clean
+    value = self.to_python(value)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\forms\models.py", line 1274, in to_python
+    value = self.queryset.get(**{key: value})
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\db\models\query.py", line 433, in get
+    raise self.model.MultipleObjectsReturned(
+undrid.models.Department.MultipleObjectsReturned: get() returned more than one Department -- it returned 2!
+ERROR 2025-04-16 16:39:08,336 basehttp "POST /create-article HTTP/1.1" 500 99011
+INFO 2025-04-16 16:39:12,617 basehttp "GET /create-article HTTP/1.1" 200 26735
+INFO 2025-04-16 16:39:21,085 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 16:39:30,074 basehttp "GET /admin/undrid/ HTTP/1.1" 200 4043
+INFO 2025-04-16 16:39:30,118 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-04-16 16:39:31,637 basehttp "GET /admin/undrid/department/ HTTP/1.1" 200 32710
+INFO 2025-04-16 16:39:31,828 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3317
+ERROR 2025-04-16 16:40:27,634 log Internal Server Error: /admin/undrid/department/FAA/change/
+Traceback (most recent call last):
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\contrib\admin\options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\contrib\admin\options.py", line 1656, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\contrib\admin\options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\contrib\admin\options.py", line 1555, in _changeform_view
+    obj = self.get_object(request, unquote(object_id), to_field)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\contrib\admin\options.py", line 762, in get_object
+    return queryset.get(**{field.name: object_id})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\db\models\query.py", line 433, in get
+    raise self.model.MultipleObjectsReturned(
+undrid.models.Department.MultipleObjectsReturned: get() returned more than one Department -- it returned 2!
+ERROR 2025-04-16 16:40:27,641 basehttp "GET /admin/undrid/department/FAA/change/ HTTP/1.1" 500 118867
+INFO 2025-04-16 16:40:31,372 basehttp "GET /admin/undrid/department/ HTTP/1.1" 200 32710
+ERROR 2025-04-16 16:40:33,706 log Internal Server Error: /admin/undrid/department/FAA/change/
+Traceback (most recent call last):
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\contrib\admin\options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\contrib\admin\options.py", line 1656, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\contrib\admin\options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\contrib\admin\options.py", line 1555, in _changeform_view
+    obj = self.get_object(request, unquote(object_id), to_field)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\contrib\admin\options.py", line 762, in get_object
+    return queryset.get(**{field.name: object_id})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\drid2_py12\Lib\site-packages\django\db\models\query.py", line 433, in get
+    raise self.model.MultipleObjectsReturned(
+undrid.models.Department.MultipleObjectsReturned: get() returned more than one Department -- it returned 2!
+ERROR 2025-04-16 16:40:33,709 basehttp "GET /admin/undrid/department/FAA/change/ HTTP/1.1" 500 118867
+INFO 2025-04-16 16:40:38,518 basehttp "GET /admin/undrid/department/ HTTP/1.1" 200 32710
+INFO 2025-04-16 16:40:46,082 basehttp "POST /admin/undrid/department/ HTTP/1.1" 200 6065
+INFO 2025-04-16 16:40:46,115 basehttp "GET /static/admin/js/cancel.js HTTP/1.1" 304 0
+INFO 2025-04-16 16:40:54,511 basehttp "GET /admin/undrid/department/ HTTP/1.1" 200 32710
+INFO 2025-04-16 16:40:54,731 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3317
+INFO 2025-04-16 16:41:20,992 basehttp "POST /admin/undrid/department/ HTTP/1.1" 200 6065
+INFO 2025-04-16 16:41:26,879 basehttp "POST /admin/undrid/department/ HTTP/1.1" 302 0
+INFO 2025-04-16 16:41:27,570 basehttp "GET /admin/undrid/department/ HTTP/1.1" 200 32834
+INFO 2025-04-16 16:41:27,831 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3317
+INFO 2025-04-16 16:41:27,849 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2025-04-16 16:41:30,414 basehttp "GET /admin/undrid/department/add/ HTTP/1.1" 200 11846
+INFO 2025-04-16 16:41:30,860 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3317
+INFO 2025-04-16 16:41:53,226 basehttp "POST /admin/undrid/department/add/ HTTP/1.1" 302 0
+INFO 2025-04-16 16:41:53,962 basehttp "GET /admin/undrid/department/ HTTP/1.1" 200 33003
+INFO 2025-04-16 16:41:54,219 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3317
+INFO 2025-04-16 16:41:55,572 basehttp "GET /admin/undrid/department/add/ HTTP/1.1" 200 11846
+INFO 2025-04-16 16:41:56,048 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3317
+INFO 2025-04-16 16:42:19,522 basehttp "POST /admin/undrid/department/add/ HTTP/1.1" 302 0
+INFO 2025-04-16 16:42:20,263 basehttp "GET /admin/undrid/department/ HTTP/1.1" 200 32986
+INFO 2025-04-16 16:42:20,519 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3317
+INFO 2025-04-16 16:43:03,334 basehttp "POST /create-article HTTP/1.1" 302 0
+INFO 2025-04-16 16:43:03,800 basehttp "GET /articles/ HTTP/1.1" 200 10691
+INFO 2025-04-16 16:43:03,838 basehttp "GET /media/articles/covers/control_p_Nfke4a1.jpeg HTTP/1.1" 304 0
+INFO 2025-04-16 16:43:03,852 basehttp "GET /media/articles/covers/Screenshot_20-2-2025_163817_.jpeg HTTP/1.1" 304 0
+INFO 2025-04-16 16:43:03,877 basehttp "GET /static/js/article_publish.js HTTP/1.1" 304 0
+INFO 2025-04-16 16:43:04,019 basehttp "GET /media/articles/covers/falling_zZYWTiS.png HTTP/1.1" 200 142572
+INFO 2025-04-16 16:43:08,354 basehttp "GET /article/67ffd007b40f21740263c332/ HTTP/1.1" 200 5381
+INFO 2025-04-16 16:43:08,387 basehttp "GET /media/articles/covers/falling_zZYWTiS.png HTTP/1.1" 304 0
+INFO 2025-04-16 16:43:11,841 basehttp "GET /contributors/67ff922431c1b9d92845ef1a/ HTTP/1.1" 200 6742
+INFO 2025-04-16 16:43:18,169 basehttp "GET /contributors/67ff989d812dcd442d62af8d/ HTTP/1.1" 200 6763
+INFO 2025-04-16 16:43:37,180 basehttp "GET /contributors/ HTTP/1.1" 200 7276
+INFO 2025-04-16 16:43:40,854 basehttp "GET /contributors/67ff922431c1b9d92845ef1a/ HTTP/1.1" 200 6742
+INFO 2025-04-16 16:50:18,614 autoreload C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\undrid\urls.py changed, reloading.
+INFO 2025-04-16 16:50:20,590 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 16:50:52,520 autoreload C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\undrid\views.py changed, reloading.
+INFO 2025-04-16 16:50:54,407 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 16:51:08,131 autoreload C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\undrid\views.py changed, reloading.
+INFO 2025-04-16 16:51:09,955 autoreload Watching for file changes with StatReloader
