@@ -171,7 +171,7 @@ def add_contributor(request):
         form = ContributorForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return redirect('search_contributors')
+            return redirect('contributor_list')
     else:
         form = ContributorForm()
     return render(request, 'add_contributor.html', {'form': form})
