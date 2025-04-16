@@ -1,8 +1,9 @@
 from django.contrib import admin
-from . models import *
+from .models import *
 from bson.objectid import ObjectId
 from django import forms
 from .forms import *
+
 
 class ArticleAdmin(admin.ModelAdmin):
     form = ArticleAdminForm
@@ -24,6 +25,19 @@ class ArticleAdmin(admin.ModelAdmin):
         for obj in queryset:
             obj.delete()
 
+    def get_deleted_objects(self, objs, request):
+        """
+        Override to handle ObjectId deletion properly
+        """
+        # Return a simplified version for MongoDB models
+        deletable_objects = []
+        model_count = {self.model._meta.verbose_name: len(objs)}
+        perms_needed = set()
+        protected = []
+
+        return deletable_objects, model_count, perms_needed, protected
+
+
 class ContributorAdmin(admin.ModelAdmin):
     list_display = ('name', 'email', '_id')
     search_fields = ('name', 'email')
@@ -42,9 +56,21 @@ class ContributorAdmin(admin.ModelAdmin):
         for obj in queryset:
             obj.delete()
 
+    def get_deleted_objects(self, objs, request):
+        """
+        Override to handle ObjectId deletion properly
+        """
+        # Return a simplified version for MongoDB models
+        deletable_objects = []
+        model_count = {self.model._meta.verbose_name: len(objs)}
+        perms_needed = set()
+        protected = []
+
+        return deletable_objects, model_count, perms_needed, protected
+
 
 # Register your models here.
 admin.site.register(Faculty)
 admin.site.register(Department)
 admin.site.register(Article, ArticleAdmin)
-admin.site.register(Contributor)
+admin.site.register(Contributor, ContributorAdmin)  # Changed to use ContributorAdmin

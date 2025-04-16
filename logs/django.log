@@ -3368,3 +3368,143 @@ INFO 2025-04-16 13:41:11,226 basehttp "GET /contributors/add/ HTTP/1.1" 200 5180
 INFO 2025-04-16 13:41:15,178 basehttp "GET /contributors/ HTTP/1.1" 200 7276
 INFO 2025-04-16 13:41:18,243 basehttp "GET /contributors/67ff989d812dcd442d62af8d/ HTTP/1.1" 200 6766
 INFO 2025-04-16 13:41:20,461 basehttp "GET /contributors/add/ HTTP/1.1" 200 5180
+INFO 2025-04-16 13:42:45,731 basehttp "GET /admin/undrid/article/ HTTP/1.1" 200 8850
+INFO 2025-04-16 13:42:46,181 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3317
+INFO 2025-04-16 13:42:53,408 basehttp "POST /admin/undrid/article/ HTTP/1.1" 200 5773
+INFO 2025-04-16 13:42:54,513 basehttp "POST /admin/undrid/article/ HTTP/1.1" 200 8850
+INFO 2025-04-16 13:42:54,974 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3317
+INFO 2025-04-16 13:43:02,445 basehttp "POST /admin/undrid/article/ HTTP/1.1" 200 5773
+INFO 2025-04-16 13:43:03,649 basehttp "POST /admin/undrid/article/ HTTP/1.1" 200 8850
+INFO 2025-04-16 13:43:04,133 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3317
+INFO 2025-04-16 13:48:03,540 autoreload C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\undrid\admin.py changed, reloading.
+INFO 2025-04-16 13:48:06,690 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 13:49:30,358 autoreload C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\undrid\admin.py changed, reloading.
+INFO 2025-04-16 13:49:32,894 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 13:50:00,487 autoreload C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\undrid\models.py changed, reloading.
+INFO 2025-04-16 13:50:03,222 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 13:50:15,736 autoreload C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\undrid\models.py changed, reloading.
+INFO 2025-04-16 13:50:18,389 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 13:50:29,553 basehttp "POST /admin/undrid/article/ HTTP/1.1" 200 5802
+INFO 2025-04-16 13:50:31,333 basehttp "POST /admin/undrid/article/ HTTP/1.1" 200 8850
+INFO 2025-04-16 13:50:31,799 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3317
+INFO 2025-04-16 13:50:48,551 basehttp "GET / HTTP/1.1" 200 7438
+INFO 2025-04-16 13:50:56,910 basehttp "GET /admin/undrid/article/ HTTP/1.1" 200 8850
+INFO 2025-04-16 13:50:57,329 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3317
+INFO 2025-04-16 13:51:06,909 basehttp "GET /admin/ HTTP/1.1" 200 8727
+INFO 2025-04-16 13:51:24,367 basehttp "GET /admin/undrid/article/ HTTP/1.1" 200 8850
+INFO 2025-04-16 13:51:24,812 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3317
+INFO 2025-04-16 13:51:37,628 basehttp "GET /admin/undrid/article/67ff9f44d0c6724f2d724958/change/ HTTP/1.1" 200 27338
+INFO 2025-04-16 13:51:37,979 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3317
+INFO 2025-04-16 13:51:43,759 basehttp "GET /admin/undrid/article/ HTTP/1.1" 200 8850
+INFO 2025-04-16 13:51:45,455 basehttp "GET /admin/undrid/article/67fe839d8967c6bdff675fdd/change/ HTTP/1.1" 200 27320
+INFO 2025-04-16 13:51:45,834 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3317
+INFO 2025-04-16 13:51:47,951 basehttp "GET /admin/undrid/article/67fe839d8967c6bdff675fdd/delete/ HTTP/1.1" 200 5823
+INFO 2025-04-16 13:51:49,607 basehttp "POST /admin/undrid/article/67fe839d8967c6bdff675fdd/delete/ HTTP/1.1" 302 0
+INFO 2025-04-16 13:51:50,169 basehttp "GET /admin/undrid/article/ HTTP/1.1" 200 8623
+INFO 2025-04-16 13:51:50,635 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3317
+INFO 2025-04-16 13:51:58,227 basehttp "GET /articles/ HTTP/1.1" 200 7113
+INFO 2025-04-16 13:51:58,275 basehttp "GET /media/articles/covers/control_p_Nfke4a1.jpeg HTTP/1.1" 304 0
+INFO 2025-04-16 13:51:58,276 basehttp "GET /media/articles/covers/Screenshot_20-2-2025_163817_.jpeg HTTP/1.1" 304 0
+INFO 2025-04-16 13:57:48,221 autoreload C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\undrid\models.py changed, reloading.
+INFO 2025-04-16 13:57:49,907 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 14:02:22,947 autoreload C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\undrid\views.py changed, reloading.
+INFO 2025-04-16 14:02:26,100 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 14:02:40,208 autoreload C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\undrid\views.py changed, reloading.
+INFO 2025-04-16 14:02:42,004 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 14:02:56,040 autoreload C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\undrid\views.py changed, reloading.
+INFO 2025-04-16 14:02:57,977 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 14:03:15,057 autoreload C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\undrid\views.py changed, reloading.
+INFO 2025-04-16 14:03:17,040 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 14:03:33,847 autoreload C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\undrid\views.py changed, reloading.
+INFO 2025-04-16 14:03:35,952 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 14:05:11,918 autoreload C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\undrid\models.py changed, reloading.
+INFO 2025-04-16 14:05:13,817 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 14:13:16,110 autoreload C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\undrid\urls.py changed, reloading.
+INFO 2025-04-16 14:13:18,283 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 14:20:04,528 basehttp "GET /articles/ HTTP/1.1" 200 8662
+INFO 2025-04-16 14:20:04,564 basehttp "GET /media/articles/covers/control_p_Nfke4a1.jpeg HTTP/1.1" 304 0
+INFO 2025-04-16 14:20:04,574 basehttp "GET /media/articles/covers/Screenshot_20-2-2025_163817_.jpeg HTTP/1.1" 304 0
+WARNING 2025-04-16 14:20:04,622 basehttp "GET /static/js/article_publish.js HTTP/1.1" 404 1790
+WARNING 2025-04-16 14:20:04,635 basehttp "GET /static/js/article_publish.js HTTP/1.1" 404 1790
+INFO 2025-04-16 14:20:19,798 basehttp "GET /articles/67ff9f44d0c6724f2d724958/edit/ HTTP/1.1" 200 23190
+INFO 2025-04-16 14:20:25,815 basehttp "POST /articles/67ff9f44d0c6724f2d724958/edit/ HTTP/1.1" 302 0
+INFO 2025-04-16 14:20:26,294 basehttp "GET /article/67ff9f44d0c6724f2d724958/ HTTP/1.1" 200 4820
+INFO 2025-04-16 14:20:34,385 basehttp "GET /articles/ HTTP/1.1" 200 8662
+WARNING 2025-04-16 14:20:34,411 basehttp "GET /static/js/article_publish.js HTTP/1.1" 404 1790
+WARNING 2025-04-16 14:20:34,427 basehttp "GET /static/js/article_publish.js HTTP/1.1" 404 1790
+INFO 2025-04-16 14:21:21,627 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 14:21:26,431 basehttp "GET /articles/ HTTP/1.1" 200 8662
+WARNING 2025-04-16 14:21:26,467 basehttp "GET /static/js/article_publish.js HTTP/1.1" 404 1790
+WARNING 2025-04-16 14:21:26,491 basehttp "GET /static/js/article_publish.js HTTP/1.1" 404 1790
+INFO 2025-04-16 14:21:42,724 basehttp "GET / HTTP/1.1" 200 6561
+INFO 2025-04-16 14:21:53,494 basehttp "GET /admin/undrid/article/ HTTP/1.1" 200 8430
+INFO 2025-04-16 14:21:55,732 basehttp "GET /admin/undrid/article/ HTTP/1.1" 200 8430
+INFO 2025-04-16 14:21:55,759 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-04-16 14:21:55,773 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-04-16 14:21:55,774 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-04-16 14:21:55,788 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-04-16 14:21:55,789 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-04-16 14:21:55,789 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-04-16 14:21:55,790 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-04-16 14:21:55,790 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-04-16 14:21:55,794 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-04-16 14:21:55,797 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-04-16 14:21:55,800 basehttp "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2025-04-16 14:21:55,804 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-04-16 14:21:55,808 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-04-16 14:21:55,812 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-04-16 14:21:56,206 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3317
+INFO 2025-04-16 14:21:56,231 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-04-16 14:21:56,232 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2025-04-16 14:21:56,232 basehttp "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2025-04-16 14:21:56,235 basehttp "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO 2025-04-16 14:21:56,236 basehttp "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2025-04-16 14:22:13,519 basehttp "GET /articles/ HTTP/1.1" 200 8662
+WARNING 2025-04-16 14:22:13,569 basehttp "GET /static/js/article_publish.js HTTP/1.1" 404 1790
+WARNING 2025-04-16 14:22:13,611 basehttp "GET /static/js/article_publish.js HTTP/1.1" 404 1790
+INFO 2025-04-16 14:23:11,149 basehttp "GET /articles/ HTTP/1.1" 200 8662
+WARNING 2025-04-16 14:23:11,182 basehttp "GET /static/js/article_publish.js HTTP/1.1" 404 1790
+WARNING 2025-04-16 14:23:11,197 basehttp "GET /static/js/article_publish.js HTTP/1.1" 404 1790
+INFO 2025-04-16 14:24:15,940 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 14:25:12,384 basehttp "GET /articles/ HTTP/1.1" 200 8662
+INFO 2025-04-16 14:25:12,527 basehttp "GET /static/js/article_publish.js HTTP/1.1" 200 3920
+WARNING 2025-04-16 14:25:14,180 log Not Found: /articles/67ff9f44d0c6724f2d724958/toggle-publish/
+WARNING 2025-04-16 14:25:14,182 log Not Found: /articles/67ff9f44d0c6724f2d724958/toggle-publish/
+WARNING 2025-04-16 14:25:14,183 basehttp "POST /articles/67ff9f44d0c6724f2d724958/toggle-publish/ HTTP/1.1" 404 5415
+WARNING 2025-04-16 14:25:14,183 basehttp "POST /articles/67ff9f44d0c6724f2d724958/toggle-publish/ HTTP/1.1" 404 5415
+INFO 2025-04-16 14:26:26,614 autoreload C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\undrid\urls.py changed, reloading.
+INFO 2025-04-16 14:26:28,256 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 14:26:32,821 basehttp "GET /articles/ HTTP/1.1" 200 8662
+INFO 2025-04-16 14:26:32,849 basehttp "GET /static/js/article_publish.js HTTP/1.1" 304 0
+INFO 2025-04-16 14:26:34,747 basehttp "POST /articles/67ff98c0812dcd442d62af90/toggle-publish/ HTTP/1.1" 200 89
+INFO 2025-04-16 14:26:34,748 basehttp "POST /articles/67ff98c0812dcd442d62af90/toggle-publish/ HTTP/1.1" 200 89
+INFO 2025-04-16 14:26:54,037 basehttp "GET /admin/undrid/article/ HTTP/1.1" 200 8430
+INFO 2025-04-16 14:26:54,069 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2025-04-16 14:26:54,475 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3317
+INFO 2025-04-16 14:26:55,773 basehttp "GET /admin/undrid/article/67ff9f44d0c6724f2d724958/change/ HTTP/1.1" 200 27749
+INFO 2025-04-16 14:26:55,804 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2025-04-16 14:26:55,824 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-04-16 14:26:55,829 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2025-04-16 14:26:55,830 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2025-04-16 14:26:55,835 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2025-04-16 14:26:56,120 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3317
+INFO 2025-04-16 14:27:01,078 basehttp "GET /admin/undrid/article/ HTTP/1.1" 200 8430
+INFO 2025-04-16 14:27:01,525 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3317
+INFO 2025-04-16 14:27:02,749 basehttp "GET /admin/undrid/article/67ff98c0812dcd442d62af90/change/ HTTP/1.1" 200 27718
+INFO 2025-04-16 14:27:03,153 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3317
+INFO 2025-04-16 14:27:06,772 basehttp "GET /admin/undrid/article/ HTTP/1.1" 200 8430
+INFO 2025-04-16 14:27:07,221 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3317
+INFO 2025-04-16 14:27:14,739 basehttp "GET / HTTP/1.1" 200 6561
+INFO 2025-04-16 14:28:34,306 basehttp "GET / HTTP/1.1" 200 6561
+INFO 2025-04-16 14:28:37,005 basehttp "GET /article/67ff9f44d0c6724f2d724958/ HTTP/1.1" 200 4424
+INFO 2025-04-16 14:28:37,041 basehttp "GET /media/articles/covers/Screenshot_20-2-2025_163817_.jpeg HTTP/1.1" 304 0
+INFO 2025-04-16 14:28:44,684 basehttp "GET / HTTP/1.1" 200 6561
+INFO 2025-04-16 14:28:47,508 basehttp "GET / HTTP/1.1" 200 6561
+INFO 2025-04-16 14:28:50,287 basehttp "GET / HTTP/1.1" 200 6561
+INFO 2025-04-16 14:28:51,856 basehttp "GET /article/67ff9f44d0c6724f2d724958/ HTTP/1.1" 200 4424
+INFO 2025-04-16 14:30:42,766 basehttp "GET /article/67ff9f44d0c6724f2d724958/ HTTP/1.1" 200 5706
+INFO 2025-04-16 14:30:42,791 basehttp "GET /static/js/article_publish.js HTTP/1.1" 304 0
+INFO 2025-04-16 14:31:28,656 basehttp "GET /article/67ff9f44d0c6724f2d724958/ HTTP/1.1" 200 5250
+INFO 2025-04-16 14:31:38,662 basehttp "GET /article/67ff98c0812dcd442d62af90/ HTTP/1.1" 200 5254
+INFO 2025-04-16 14:31:38,702 basehttp "GET /media/articles/covers/control_p_Nfke4a1.jpeg HTTP/1.1" 304 0
+INFO 2025-04-16 14:31:45,496 basehttp "GET /articles/67ff98c0812dcd442d62af90/edit/ HTTP/1.1" 200 23145

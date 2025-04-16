@@ -48,6 +48,12 @@ class Contributor(models.Model):
         null=True
     )
 
+    def delete(self, *args, **kwargs):
+        # Clear the M2M relationships first
+        if hasattr(self, 'articles'):
+            self.articles.clear()
+        super().delete(*args, **kwargs)
+
     def __str__(self):
         return f"{self.email} | {self._id}"
 
@@ -76,6 +82,12 @@ class Article(models.Model):
     department = models.ForeignKey(Department, on_delete=models.CASCADE)
     owner = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
     publish_date = models.DateTimeField(auto_now_add=True)
+    is_published = models.BooleanField(default=False)
+
+    def delete(self, *args, **kwargs):
+        # Clear the M2M relationships first
+        self.contributors.clear()
+        super().delete(*args, **kwargs)
 
     def __str__(self):
         return f"{self.title} | {self._id}"

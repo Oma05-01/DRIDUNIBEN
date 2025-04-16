@@ -1,9 +1,11 @@
 from django.shortcuts import render, get_object_or_404, redirect
+from django.http import HttpResponse, JsonResponse
 from .models import *
 from .forms import *
 from django.db.models import Count, Q
 from bson import ObjectId
 from django.http import Http404
+from django.contrib import messages
 
 def admin_dashboard(request):
     query = request.GET.get('q', '')
@@ -80,6 +82,70 @@ def article_list(request):
     if query:
         articles = articles.filter(title__icontains=query)
     return render(request, 'article_list.html', {'articles': articles})
+
+
+def edit_article(request, pk):
+    try:
+        article = Article.objects.get(_id=ObjectId(pk))
+    except (Article.DoesNotExist, Exception):
+        raise Http404("Article not found")
+
+    # Check if user is the owner
+    if request.user != article.owner:
+        messages.error(request, "You don't have permission to edit this article.")
+        return redirect('article_list')
+
+    if request.method == 'POST':
+        form = ArticleForm(request.POST, request.FILES, instance=article)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Article updated successfully!")
+            return redirect('article_detail', pk=pk)
+    else:
+        form = ArticleForm(instance=article)
+
+    return render(request, 'edit_article.html', {'form': form, 'article': article})
+
+
+def delete_article(request, pk):
+    try:
+        article = Article.objects.get(_id=ObjectId(pk))
+    except (Article.DoesNotExist, Exception):
+        raise Http404("Article not found")
+
+    # Check if user is the owner
+    if request.user != article.owner:
+        messages.error(request, "You don't have permission to delete this article.")
+        return redirect('article_list')
+
+    if request.method == 'POST':
+        article.delete()
+        messages.success(request, "Article deleted successfully!")
+        return redirect('article_list')
+
+    return render(request, 'delete_article_confirm.html', {'article': article})
+
+
+def toggle_publish(request, pk):
+    try:
+        article = Article.objects.get(_id=ObjectId(pk))
+    except (Article.DoesNotExist, Exception):
+        return JsonResponse({'status': 'error', 'message': 'Article not found'}, status=404)
+
+    # Check if user is the owner
+    if request.user != article.owner:
+        return JsonResponse({'status': 'error', 'message': 'Permission denied'}, status=403)
+
+    # Toggle the published status
+    article.is_published = not article.is_published
+    article.save()
+
+    status = 'published' if article.is_published else 'unpublished'
+    return JsonResponse({
+        'status': 'success',
+        'is_published': article.is_published,
+        'message': f'Article {status} successfully!'
+    })
 
 
 def article_detail(request, pk):
