@@ -1,0 +1,98 @@
+{% extends 'article_base.html' %}
+{% load static %}
+
+{% block title %}Contributors{% endblock %}
+
+{% block extra_css %}
+<style>
+    .contributor-card {
+        transition: transform 0.2s;
+        margin-bottom: 1.5rem;
+    }
+    .contributor-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+    .contributor-avatar {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .search-container {
+        max-width: 800px;
+        margin: 0 auto 2rem;
+    }
+    .empty-state {
+        text-align: center;
+        padding: 3rem;
+        color: #6c757d;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<br>
+<br>
+<div class="container">
+    <div class="search-container">
+        <form method="get" action="{% url 'contributor_list' %}">
+            <div class="input-group mb-3">
+                <input type="text"
+                       class="form-control"
+                       placeholder="Search contributors by name, email or bio..."
+                       name="q"
+                       value="{{ search_query }}"
+                       aria-label="Search">
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-search"></i> Search
+                </button>
+                <a href="{% url 'contributor_list' %}" class="btn btn-outline-secondary">
+                    <i class="fas fa-sync-alt"></i> Clear
+                </a>
+            </div>
+        </form>
+    </div>
+
+    {% if contributors %}
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        {% for contributor in contributors %}
+        <div class="col">
+            <div class="card contributor-card h-100">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                        {% if contributor.profile_image %}
+                        <img src="{{ contributor.profile_image.url }}"
+                             class="contributor-avatar me-3"
+                             alt="{{ contributor.name }}">
+                        {% else %}
+                        <div class="contributor-avatar bg-secondary text-white d-flex align-items-center justify-content-center me-3">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        {% endif %}
+                        <div>
+                            <h5 class="mb-0">{{ contributor.name }}</h5>
+                            <small class="text-muted">{{ contributor.email }}</small>
+                        </div>
+                    </div>
+                    {% if contributor.bio %}
+                    <p class="card-text text-truncate">{{ contributor.bio }}</p>
+                    {% endif %}
+                    <a href="{% url 'view_contributor' contributor.get_id %}"
+                       class="btn btn-sm btn-outline-primary stretched-link">
+                        View Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-state">
+        <i class="fas fa-users fa-4x mb-3"></i>
+        <h4>No contributors found</h4>
+        <p>{% if search_query %}Try a different search term{% else %}No contributors in the system yet{% endif %}</p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

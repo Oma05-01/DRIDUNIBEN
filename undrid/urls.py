@@ -15,6 +15,11 @@ urlpatterns = [
     path('create-article', views.create_article, name='create_article'),
     path('article/<str:pk>/', views.article_detail, name='article_detail'),
 
+    path('contributors/search/', views.search_contributors, name='search_contributors'),
+    path('contributors/add/', views.add_contributor, name='add_contributor'),
+    path('contributors/', views.contributor_list, name='contributor_list'),
+    path('contributors/<str:pk>/', views.view_contributor, name='view_contributor'),
+
     path('', views.admin_dashboard, name='admin_dashboard'),
 ]
 

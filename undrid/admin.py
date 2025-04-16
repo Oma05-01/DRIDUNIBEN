@@ -2,35 +2,45 @@ from django.contrib import admin
 from . models import *
 from bson.objectid import ObjectId
 from django import forms
-
-
-class ArticleAdminForm(forms.ModelForm):
-    class Meta:
-        model = Article
-        fields = '__all__'
-
-    def clean_contributors(self):
-        contributors = self.cleaned_data.get('contributors')
-        # We don't need additional validation here as Django admin handles the selection
-        return contributors
-
+from .forms import *
 
 class ArticleAdmin(admin.ModelAdmin):
+    form = ArticleAdminForm
     raw_id_fields = ('contributors',)
+    list_display = ('title', 'category', 'publish_date', '_id')
+    search_fields = ('title', 'content')
 
-    def save_model(self, request, obj, form, change):
-        super().save_model(request, obj, form, change)
+    def get_object(self, request, object_id, from_field=None):
+        try:
+            return self.model.objects.get(_id=ObjectId(object_id))
+        except (self.model.DoesNotExist, ValueError, TypeError):
+            return None
 
-        # Handle the many-to-many relationship after saving
-        if 'contributors' in form.cleaned_data:
-            obj.contributors.clear()  # Clear existing relationships
-            for contributor in form.cleaned_data['contributors']:
-                obj.contributors.add(contributor)
+    def delete_model(self, request, obj):
+        if obj:
+            obj.delete()
 
-    def formfield_for_manytomany(self, db_field, request, **kwargs):
-        if db_field.name == 'contributors':
-            kwargs['queryset'] = Contributor.objects.all()
-        return super().formfield_for_manytomany(db_field, request, **kwargs)
+    def delete_queryset(self, request, queryset):
+        for obj in queryset:
+            obj.delete()
+
+class ContributorAdmin(admin.ModelAdmin):
+    list_display = ('name', 'email', '_id')
+    search_fields = ('name', 'email')
+
+    def get_object(self, request, object_id, from_field=None):
+        try:
+            return self.model.objects.get(_id=ObjectId(object_id))
+        except (self.model.DoesNotExist, ValueError, TypeError):
+            return None
+
+    def delete_model(self, request, obj):
+        if obj:
+            obj.delete()
+
+    def delete_queryset(self, request, queryset):
+        for obj in queryset:
+            obj.delete()
 
 
 # Register your models here.

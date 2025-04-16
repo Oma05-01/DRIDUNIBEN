@@ -61,6 +61,9 @@ class Contributor(models.Model):
             return ObjectId(value)
         return value
 
+    def get_id(self):
+        return str(self._id)
+
 
 class Article(models.Model):
     _id = djongo_models.ObjectIdField(primary_key=True, default=ObjectId, null=False)

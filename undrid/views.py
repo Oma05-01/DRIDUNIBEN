@@ -10,7 +10,7 @@ def admin_dashboard(request):
 
     articles = Article.objects.all()
     for article in articles:
-        print("Article ID:", article._id)
+        print("Article ID:", article._id, "Article contributor: ", article.contributors.all())
 
     if query:
         articles = articles.filter(
@@ -61,18 +61,13 @@ def create_article(request):
         if form.is_valid():
             article = form.save(commit=False)
             article.owner = request.user
-            article.save()  # Save first to create the article
+            article.save()
 
-            # Manually handle contributors
-            contributor_ids = request.POST.getlist('contributors')
-            if contributor_ids and contributor_ids != ['None'] and contributor_ids != ['on']:
-                # Convert string IDs to ObjectIds
-                obj_ids = [ObjectId(cid) for cid in contributor_ids if cid]
-                contributors = Contributor.objects.filter(_id__in=obj_ids)
-                for contributor in contributors:
-                    article.contributors.add(contributor)
+            form.save_m2m()  # ✅ This will save contributors properly
 
             return redirect('article_list')
+        else:
+            print("Form Errors:", form.errors)
     else:
         form = ArticleForm()
 
@@ -96,3 +91,45 @@ def article_detail(request, pk):
     except (Article.DoesNotExist, Exception):
         raise Http404("Article not found")
     return render(request, 'article_detail.html', {'article': article, 'contributors': contributors})
+
+
+def search_contributors(request):
+    query = request.GET.get('q', '')
+    contributors = Contributor.objects.all()
+    if query:
+        contributors = contributors.filter(name__icontains=query) | contributors.filter(email__icontains=query)
+    return render(request, 'search_contributors.html', {'contributors': contributors, 'query': query})
+
+def add_contributor(request):
+    if request.method == 'POST':
+        form = ContributorForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('search_contributors')
+    else:
+        form = ContributorForm()
+    return render(request, 'add_contributor.html', {'form': form})
+
+
+def contributor_list(request):
+    query = request.GET.get('q', '')
+
+    if query:
+        contributors = Contributor.objects.filter(
+            Q(name__icontains=query) |
+            Q(email__icontains=query) |
+            Q(bio__icontains=query)
+        ).order_by('name')
+    else:
+        contributors = Contributor.objects.all().order_by('name')
+
+    context = {
+        'contributors': contributors,
+        'search_query': query
+    }
+    return render(request, 'contributor_list.html', context)
+
+
+def view_contributor(request, pk):
+    contributor = get_object_or_404(Contributor, _id=ObjectId(pk))
+    return render(request, 'view_contributor.html', {'contributor': contributor})

@@ -32,8 +32,10 @@
             {% for article in articles %}
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
-                        {% if article.image %}
-                            <img src="{{ article.image.url }}" class="card-img-top" alt="{{ article.title }}">
+                        {% if article.cover_photo %}
+                            <div class="ratio ratio-16x9">
+                                <img src="{{ article.cover_photo.url }}" class="card-img-top" alt="{{ article.title }}">
+                            </div>
                         {% else %}
                             <div class="bg-light text-center py-5">
                                 <i class="fas fa-file-alt fa-3x text-muted"></i>
@@ -48,7 +50,7 @@
                             {{contributor_ids}}
                         </div>
                         <div class="card-footer bg-white">
-                            <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                            <a href="{% url 'article_detail' article.id %}" class="btn btn-sm btn-outline-primary">Read More</a>
                             {% if request.user == article.owner %}
                                 <a href="#" class="btn btn-sm btn-outline-secondary">Edit</a>
                                 <a href="#" class="btn btn-sm btn-outline-danger">Delete</a>

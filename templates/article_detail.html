@@ -16,12 +16,11 @@
             <p>{{ article.content }}</p>
 
             <p><strong>Contributors:</strong>
-<!--                {% for contributor in contributors %}-->
-<!--                    {{ contributor.name }} ({{ contributor.email }}){% if not forloop.last %}, {% endif %}-->
-<!--                {% empty %}-->
-<!--                    <em>No contributors listed.</em>-->
-<!--                {% endfor %}-->
-                {{contributors}}
+                {% for contributor in article.contributors.all %}
+                    {{ contributor.name }}{% if not forloop.last %}, {% endif %}
+                {% empty %}
+                    <em>No contributors listed.</em>
+                {% endfor %}
             </p>
         </div>
     </div>
@@ -31,7 +30,3 @@
     </div>
 </div>
 {% endblock %}
-
-
-67fe81fc1b66775a3684dda6
-67fe81fc1b66775a3684dda6

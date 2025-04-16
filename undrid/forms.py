@@ -14,27 +14,32 @@ class SearchableMultipleSelect(forms.SelectMultiple):
 class MongoDBMultipleChoiceField(forms.ModelMultipleChoiceField):
     def clean(self, value):
         if value:
-            if value == ['on']:
-                return []
-
-            valid_values = []
+            object_ids = []
             for val in value:
                 try:
-                    # Convert string ID to ObjectId
                     obj_id = ObjectId(val)
-                    # Query using _id instead of id
-                    self.queryset.filter(_id=obj_id).get()
-                    valid_values.append(obj_id)  # Store as ObjectId
+                    self.queryset.get(_id=obj_id)
+                    object_ids.append(obj_id)
                 except Exception as e:
-                    print(f"Invalid ID {val}: {str(e)}")
-                    # Skip invalid IDs
-                    pass
-            return super().clean(valid_values)
+                    print(f"Invalid contributor ID: {val} — {e}")
+            return super().clean(object_ids)
         return super().clean(value)
+
+
+class ArticleAdminForm(forms.ModelForm):
+    contributors = MongoDBMultipleChoiceField(
+        queryset=Contributor.objects.all(),
+        widget=forms.SelectMultiple
+    )
+
+    class Meta:
+        model = Article
+        fields = '__all__'
+
 
 class ArticleForm(forms.ModelForm):
     contributors = MongoDBMultipleChoiceField(
-        queryset=Contributor.objects.all(),  # Or your custom contributor queryset
+        queryset=Contributor.objects.all(),
         widget=forms.CheckboxSelectMultiple,
         required=False
     )
@@ -53,3 +58,15 @@ class ArticleForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields['department'].queryset = Department.objects.all().order_by('title')
+
+
+class ContributorForm(forms.ModelForm):
+    class Meta:
+        model = Contributor
+        fields = ['name', 'email', 'bio', 'profile_image']
+        widgets = {
+            'name': forms.TextInput(attrs={'class': 'form-control'}),
+            'email': forms.EmailInput(attrs={'class': 'form-control'}),
+            'bio': forms.Textarea(attrs={'class': 'form-control', 'rows': 3}),
+            'profile_image': forms.ClearableFileInput(attrs={'class': 'form-control'}),
+        }

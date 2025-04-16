@@ -19,19 +19,38 @@
         .navbar-brand {
             font-weight: bold;
         }
-        footer {
-            margin-top: 3rem;
-            padding: 1.5rem 0;
-            background-color: #f8f9fa;
-            border-top: 1px solid #e9ecef;
-        }
+        html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    main {
+        flex: 1 0 auto;
+    }
+
+    .navbar-brand {
+        font-weight: bold;
+    }
+
+    footer {
+        padding: 1.5rem 0;
+        background-color: #f8f9fa;
+        border-top: 1px solid #e9ecef;
+        flex-shrink: 0;
+    }
     </style>
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-            <a class="navbar-brand" href="{% url 'article_list' %}">ArticleHub</a>
+            <a class="navbar-brand" href="/">ArticleHub</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -45,6 +64,12 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'create_article' %}">Create Article</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'add_contributor' %}">Add Contributor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contributor_list' %}">Contributors</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
