@@ -3747,3 +3747,16 @@ INFO 2025-04-16 16:50:52,520 autoreload C:\Users\GHOST\PycharmProjects\DRIDUNIBE
 INFO 2025-04-16 16:50:54,407 autoreload Watching for file changes with StatReloader
 INFO 2025-04-16 16:51:08,131 autoreload C:\Users\GHOST\PycharmProjects\DRIDUNIBEN\undrid\views.py changed, reloading.
 INFO 2025-04-16 16:51:09,955 autoreload Watching for file changes with StatReloader
+INFO 2025-04-16 16:51:34,879 basehttp "GET /contributors/67ff922431c1b9d92845ef1a/ HTTP/1.1" 200 7004
+INFO 2025-04-16 16:51:40,733 basehttp "GET /contributor/67ff922431c1b9d92845ef1a/articles/ HTTP/1.1" 200 4107
+INFO 2025-04-16 16:53:03,202 basehttp "GET /contributor/67ff922431c1b9d92845ef1a/articles/ HTTP/1.1" 200 4148
+INFO 2025-04-16 16:53:05,557 basehttp "GET /article/67ffd007b40f21740263c332/ HTTP/1.1" 200 5381
+INFO 2025-04-16 16:53:05,593 basehttp "GET /media/articles/covers/falling_zZYWTiS.png HTTP/1.1" 304 0
+INFO 2025-04-16 16:53:15,832 basehttp "GET /contributors/ HTTP/1.1" 200 7276
+INFO 2025-04-16 16:53:17,143 basehttp "GET /contributors/67ff989d812dcd442d62af8d/ HTTP/1.1" 200 7025
+INFO 2025-04-16 16:53:19,075 basehttp "GET /contributor/67ff989d812dcd442d62af8d/articles/ HTTP/1.1" 200 3861
+INFO 2025-04-16 16:53:25,109 basehttp "GET /contributors/add/ HTTP/1.1" 200 5180
+INFO 2025-04-16 16:53:26,685 basehttp "GET /contributors/ HTTP/1.1" 200 7276
+INFO 2025-04-16 16:53:47,464 basehttp "GET /contributors/ HTTP/1.1" 200 7276
+INFO 2025-04-16 16:53:49,071 basehttp "GET /contributors/add/ HTTP/1.1" 200 5180
+INFO 2025-04-16 16:53:50,218 basehttp "GET /contributors/ HTTP/1.1" 200 7276
